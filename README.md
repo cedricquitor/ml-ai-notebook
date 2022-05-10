@@ -8,6 +8,7 @@ These are the resources that I am following:
 - I am following this GeekForGeeks' [How to Become Data Scientist – A Complete Roadmap](https://www.geeksforgeeks.org/how-to-become-data-scientist-a-complete-roadmap/).
 
 ### Table of Contents
+[Introduction](#introduction)
 1. [Programming](#programming)
       - [Basics of Python](#basics-of-python)
       - [Python Data Science Libraries](#python-data-science-libraries)
@@ -22,6 +23,15 @@ These are the resources that I am following:
 5. [Machine Learning](#machine-learning)
 6. [Data Scraping/APIs](#data-scrapingapis)
 7. [Deep Learning](#deep-learning)
+
+# Introduction
+**What is Machine Learning?**
+Machine Learning is the science of getting computers to act without being explicitly programmed.
+
+The harder things become to describe, the harder it is for us to tell machines what to do. Things that only humans can do and computers couldn't do before can now be done with Machine Learning. It makes machines act more and more like humans.
+
+The process of training a Machine Learning Model is to feed inputs, train the machine to learn based on the input that we fed, so that it gives us an output the next time we feed a new input.
+
 
 # Programming
 ## Basics of Python
