@@ -9,7 +9,7 @@ These are the resources that I am following:
 
 ### Table of Contents
 1. Programming
-      - [Basics of Python](https://github.com/cedricquitor/ml-ai-notebook/edit/main/NOTEBOOK.md#basics-of-python)
+      - [Basics of Python](#basics-of-python)
       - [Python Data Science Libraries](https://github.com/cedricquitor/ml-ai-notebook/edit/main/NOTEBOOK.md#python-data-science-libraries)
       - [Databases](https://github.com/cedricquitor/ml-ai-notebook/edit/main/NOTEBOOK.md#databases)
 2. Mathematics
