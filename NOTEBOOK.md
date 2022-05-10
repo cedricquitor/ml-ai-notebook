@@ -8,12 +8,20 @@ These are the resources that I am following:
 - I am following this GeekForGeeks' [How to Become Data Scientist – A Complete Roadmap](https://www.geeksforgeeks.org/how-to-become-data-scientist-a-complete-roadmap/).
 
 ### Table of Contents
-1. Programming
+1. [Programming](#programming)
       - [Basics of Python](#basics-of-python)
-      - [Python Data Science Libraries](https://github.com/cedricquitor/ml-ai-notebook/edit/main/NOTEBOOK.md#python-data-science-libraries)
-      - [Databases](https://github.com/cedricquitor/ml-ai-notebook/edit/main/NOTEBOOK.md#databases)
-2. Mathematics
-      - [Statistics](https://github.com/cedricquitor/ml-ai-notebook/edit/main/NOTEBOOK.md#data-science-mathematics)
+      - [Python Data Science Libraries](#python-data-science-libraries)
+      - [Databases](#databases)
+2. [Mathematics](#mathematics)
+      - [Statistics](#statistics)
+      - [Linear Algebra](#linear-algebra)
+      - [Calculus](#calculus)
+      - [Probability](#probability)
+3. [Data Visualization](#data-visualization)
+4. [Exploratory Data Analysis](#exploratory-data-analysis)
+5. [Machine Learning](#machine-learning)
+6. [Data Scraping/APIs](#data-scrapingapis)
+7. [Deep Learning](#deep-learning)
 
 # Programming
 ## Basics of Python
@@ -85,8 +93,6 @@ How to manipulate data using matrices?
 - Sci-kit Learn
 
 # Data Scraping/APIs
-
-
 
 # Deep Learning
 - Artificial Neural Network
