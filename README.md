@@ -117,6 +117,9 @@ Different type of evaluation metrics:
 Three parts of modelling:
 #### 1. Split the data set.
 **The most important concept in maachine learning is Training, Validation, and Test or 3 sets.**
+- Training Set (70% - 80% of your data is the standard)
+- Validation Set (10% - 15% of your data is the standard)
+- Test Set (10% - 15% of your data is the standard)
 
 To do this, you split your data into 3 sets. A **Training set** to train your model on, a **Validation set** to tune your model on, and a **Test set** to test and compare your different models.
 
@@ -141,12 +144,30 @@ Many models have different hyper parameters which can be adjusted. An example is
 
 After tuning and improving our model's performance, it's time to see how it performs on the Test set. The Test set is like the final exam for machine learning models. A good model will yield similar results on training, validation, and test sets. It's not uncommon to see a slight decline in performance from the model on the training and validation set to the test set. 
 
-What you should be worried about is if the training set performance is dramatically higher than the test set which indicates **Underfitting**, and if the test set performance is higher than the training set performance it indicates **Overfitting**. Both **Underfitting** and **Overfitting** are examples of a model not being able to generalize well. Common reasons why these occur are **Data leakage** and **Data mismatch**.
+What you should be worried about is if the Training set performance is dramatically higher than the Test set which indicates **Underfitting**, and if the Test set performance is higher than the Training set performance it indicates **Overfitting**. Both **Underfitting** and **Overfitting** are examples of a model not being able to generalize well. Common reasons why these occur are **Data leakage** and **Data mismatch**.
 
-**Data leakage** happens when some of your test data leaks into your training data.
+**Data leakage** happens when some of your test data leaks into your training data. This often results in **Overfitting** or a model doing better on the Test set than on the Training set.
+
+**Data mismatch** happens when the data you're testing on is different to the data you're training on such as having different features in the Training set data to the Test set data. Having this kind of mismatch can lead to models performing poorly on Test set data compared to Training set data. It is important to ensure that training is done on the same kind of data as you'll be testing on and as close as possible to what you'll be using in your future applications.
+
+**Fixes for Overfitting and Underfitting**
+
+**Underfitting**
+- Try a more advanced model
+- Increase model hyperparameters
+- Reduce amount of features
+- Train longer
+
+**Overfitting**
+- Collect more data
+- Try a less advanced model
+
+**When comparing two different models to each other, it's important to ensure that you're comparing apples with apples and oranges with oranges.**
 
 ### 6. Experiments
 "How could we improve/what can we try next?"
+
+Since machine learning is an iterative process, Experiments may come in different shape and form such as trying a different model or varying the input slightly.
 
 ## 2. Data Modelling
 ## 3. Deployment
