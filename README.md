@@ -26,12 +26,18 @@ These are the resources that I am following:
 
 # Introduction
 **What is Machine Learning?**
-Machine Learning is the science of getting computers to act without being explicitly programmed.
+Machine Learning is the science of getting computers to act without being explicitly programmed. It is predicting results based on incoming data.
 
 The harder things become to describe, the harder it is for us to tell machines what to do. Things that only humans can do and computers couldn't do before can now be done with Machine Learning. It makes machines act more and more like humans.
 
 The process of training a Machine Learning Model is to feed inputs, train the machine to learn based on the input that we fed, so that it gives us an output the next time we feed a new input.
 
+**Data Analysis vs Data Science**
+Data Analysis is looking at a set of data and gaining an understanding of it by comparing different examples, different features, and making visualizations like graphs.
+
+It asks the question of "What do they have in common?"
+
+Data Science is running experiments on the set of data with the hopes of finding actionable insights within.
 
 # Programming
 ## Basics of Python
@@ -93,10 +99,23 @@ How to manipulate data using matrices?
 - What's the distribution of each variable?
 
 # Machine Learning
-- Supervised
-- Unsupervised
+## Supervised Learning
+The data that will be fed into the machine already has categories.
+
+In a Supervised Learning scenario, we can do Classification or Regression.
+
+## Unsupervised Learning
+The data that will be fed into the machine is unclassified or doesn't have groups and labels. We let the machine create these categories for us.
+
+In a Unsupervised Learning scenario, we can do Clustering or Association Rule Learning.
+
 - Semi-supervised
-- Reinforcement
+
+## Reinforcement Learning
+In Reinforcement Learning, we are teaching the machine through trial and error and through rewards and punishment. It learns by interacting with the data millions of times to learn from the data that we fed and predict something.
+
+In a Reinforcement Learning scenario, we can do Skill Acquisition or Real Time Learning.
+
 - Logistic Regression
 - Linear Regression
 - Decision Tree
