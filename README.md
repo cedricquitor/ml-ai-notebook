@@ -68,8 +68,6 @@ There are two types of Supervised Learning, namely Classification and Regression
 
 #### Unsupervised Learning
 In Unsupervised Learning, you have the data but you don't have the labels. It uses patterns to create a label in which the data is classified.
-- Transfer Learning
-- Reinforcement Learning
 
 **I'm not sure of the outputs but I have inputs.**
 
@@ -101,11 +99,51 @@ Within these two data types, there's **static** and **streaming** data.
 
 In Evaluation, we define what success for the project means. It may come in the form of a percentage of machine learning model accuracy.
 
+Different type of evaluation metrics:
+| Classification | Regression | Recommendation    |
+| :------------: | :--------: | :------------:    |
+| Accuracy       | Mean absolute error (MAE)      | Precision at K |
+| Precision      | Mean squared error (MSE)       |                |
+| Recall         | Root mean squared error (RMSE) |                |
+
 ### 4. Features
 "What do we already know about the data?"
 
+**Feature** refers to the different forms of data within structured or unstructured data. **Feature coverage** is the process of ensuring all samples have similar information. Ideally, every sample has to have the same features.
+
 ### 5. Modelling
 "Based on our problem and data, what model should we use?"
+
+Three parts of modelling:
+#### 1. Split the data set.
+**The most important concept in maachine learning is Training, Validation, and Test or 3 sets.**
+
+To do this, you split your data into 3 sets. A **Training set** to train your model on, a **Validation set** to tune your model on, and a **Test set** to test and compare your different models.
+
+**Generalization** is the ability for a machine learning model to perform well on data it hasn't seen before because of what it's learned on another data set.
+
+Splitting your data set into 3 sets can avoid this from happening.
+
+#### 2. Choosing and training a model
+There are many pre-built machine learning models which you can take advantage of. In beginning, your main goal will be knowing what kind of machine learning algorithm to use with what kind of problem.
+
+After choosing a model, the next step is to train them. The goal is to line up the inputs and outputs.
+
+If your experiment takes you three hours or even up to a couple of days for a small percentage boost in performance of your model, you might consider if the experiment is actually worth it because machine learning is highly iterative. Start small and build up (add complexity) as you need.
+
+#### 3. Tuning a model
+If you're satisfied with your model's initial performance on your training data set, the next step is to try to improve it. Usually, this training will take place on a validation data split.
+
+Many models have different hyper parameters which can be adjusted. An example is adjusting the number of trees in a Random Forest or layers in a Neural Network. The goal of tuning is to improve the model's performance.
+
+#### 4. Model comparison
+"How will our model perform in the real world?"
+
+After tuning and improving our model's performance, it's time to see how it performs on the Test set. The Test set is like the final exam for machine learning models. A good model will yield similar results on training, validation, and test sets. It's not uncommon to see a slight decline in performance from the model on the training and validation set to the test set. 
+
+What you should be worried about is if the training set performance is dramatically higher than the test set which indicates **Underfitting**, and if the test set performance is higher than the training set performance it indicates **Overfitting**. Both **Underfitting** and **Overfitting** are examples of a model not being able to generalize well. Common reasons why these occur are **Data leakage** and **Data mismatch**.
+
+**Data leakage** happens when some of your test data leaks into your training data.
 
 ### 6. Experiments
 "How could we improve/what can we try next?"
