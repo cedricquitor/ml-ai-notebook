@@ -9,6 +9,8 @@ These are the resources that I am following:
 
 ### Table of Contents
 [Introduction](#introduction)
+
+[Machine Learning and Data Science Framework](#machine-learning-and-data-science-framework)
 1. [Programming](#programming)
       - [Basics of Python](#basics-of-python)
       - [Python Data Science Libraries](#python-data-science-libraries)
@@ -38,6 +40,36 @@ Data Analysis is looking at a set of data and gaining an understanding of it by 
 It asks the question of "What do they have in common?"
 
 Data Science is running experiments on the set of data with the hopes of finding actionable insights within.
+
+# Machine Learning and Data Science Framework
+This framework will help you on how to think in solving problems. I used Daniel Bourke's [A 6 Step Field Guide for Building Machine Learning Projects](https://www.mrdbourke.com/a-6-step-field-guide-for-building-machine-learning-projects/) as a reference.
+
+3 parts of Machine Learning:
+## 1. Data Collection
+### 1. Problem Definition
+In this part, we should ask "What problem are we trying to solve?", "Is it a Supervised or Unsupervised learning problem?, and "Is it a Classification or Regression problem?"
+
+### 2. Data
+Data is a requirement for any machine learning project.
+
+We should examine and ask "What kind of data do we have?", "Is it a Structure or Unstructured data?" 
+
+### 3. Evaluation
+"What defines success for us?"
+
+In Evaluation, we define what success for the project means. It may come in the form of a percentage of machine learning model accuracy.
+
+### 4. Features
+"What do we already know about the data?"
+
+### 5. Modelling
+"Based on our problem and data, what model should we use?"
+
+### 6. Experiments
+
+## 2. Data Modelling
+## 3. Deployment
+
 
 # Programming
 ## Basics of Python
@@ -128,3 +160,5 @@ In a Reinforcement Learning scenario, we can do Skill Acquisition or Real Time L
 - Convolutional Neural Network
 - Recurrent Neural Network
 - TensorFlow
+
+**Most of the initial resources and insights here are not mine. I will write down my input as I go about my learning.**
