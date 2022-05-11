@@ -47,12 +47,54 @@ This framework will help you on how to think in solving problems. I used Daniel 
 3 parts of Machine Learning:
 ## 1. Data Collection
 ### 1. Problem Definition
-In this part, we should ask "What problem are we trying to solve?", "Is it a Supervised or Unsupervised learning problem?, and "Is it a Classification or Regression problem?"
+"What problem are we trying to solve?"
+
+In this part, we should ask "Is it a Supervised or Unsupervised learning problem? and "Is it a Classification or Regression problem?"
+
+When shouldn't you use machine learning?
+- If coding can solve the problem.
+
+Main Types of Machine Learning
+#### Supervised Learning
+Supervised Learning is used when you have data and labels. A machine learning algorithm tries to use data to predict a label. If it guesses it wrong, the algorithm corrects itself and tries again. This act of correction is why it's called supervise. A supervised learning algorithm repeats this process over and over again to make the model better.
+
+There are two types of Supervised Learning, namely Classification and Regression.
+
+**Classification** problems involves predicting if something is one thing or another. If there are only two options, it's called **Binary classification**. If there are more than two options, it's called **Multi-class classification**
+
+**Regression** problems involve trying to predict a number which can go up or down, a continous number. It is commonly used in predictions such as the market value of a house.
+
+**"I know my inputs and outputs."**
+
+#### Unsupervised Learning
+In Unsupervised Learning, you have the data but you don't have the labels. It uses patterns to create a label in which the data is classified.
+- Transfer Learning
+- Reinforcement Learning
+
+**I'm not sure of the outputs but I have inputs.**
+
+#### Transfer Learning 
+Transfer Learning leverages what one machine learning model has learned in another machine learning. Although computers are very fast at making calculations, making calculations aren't free. So instead of reinventing the wheel, or starting from scratch, we can find a similar machine learning model and fine tune and adjust it to our problem.
+
+**I think my problem may be similar to something else.**
+
+#### Reinforcement Learning
+Reinforcement Learning involves having a program perform some actions within a defined space and rewarding it for doing it well and punishing it for doing poorly. Although exciting and promising, Reinforcement Learning has yet to find its way to many practical applications.
 
 ### 2. Data
 Data is a requirement for any machine learning project.
 
-We should examine and ask "What kind of data do we have?", "Is it a Structure or Unstructured data?" 
+We should examine and ask "What kind of data do we have?", "Is it a Structure or Unstructured data?"
+
+Data comes in many different shapes and sizes, but we can classify their types as **structured** and **unstructured**.
+
+**Structured data** have all of the samples in similar format. They are commonly CSV's or Excel spreadsheets.
+
+**Unstructured data** comes in varying format. They are things like images, natural language, transcribed phone calls, videos, and audio files.
+
+Within these two data types, there's **static** and **streaming** data.
+
+**Static data** is data which doesn't change over time. While **Streaming data** is data which is constantly changed over time.
 
 ### 3. Evaluation
 "What defines success for us?"
@@ -66,6 +108,7 @@ In Evaluation, we define what success for the project means. It may come in the 
 "Based on our problem and data, what model should we use?"
 
 ### 6. Experiments
+"How could we improve/what can we try next?"
 
 ## 2. Data Modelling
 ## 3. Deployment
