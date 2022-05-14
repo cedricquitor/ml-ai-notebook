@@ -183,6 +183,7 @@ Since machine learning is an iterative process, Experiments may come in differen
 ## Python Data Science Libraries
 - NumPy
 - Pandas
+- Scikit Learn
 
 ## Databases
 - SQL
