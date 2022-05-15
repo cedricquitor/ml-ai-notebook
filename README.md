@@ -194,8 +194,8 @@ Since machine learning is an iterative process, Experiments may come in differen
 - Mean
 - Median
 - Mode
-- Variance
-- Standard Deviation
+### Variance
+### Standard Deviation
 - Correlation
 - Distribution
 
