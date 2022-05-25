@@ -2,7 +2,7 @@
 
 ### Table of Contents
 
-# Azure Synapse Analytics
+# Introduction to Azure Synapse Analytics
 <p align="center" width="100%">
     <img width="50%" src="https://github.com/cedricquitor/ml-ai-notebook/blob/main/images/synapse-overview.png">
 </p>
@@ -82,3 +82,53 @@ It can also interact with existing Azure services that you may already have in p
 
 ### Integrated analytics
 With the variety of analytics that can be performed on the data at your disposal, putting together the services in a cohesive solution can be a complex operation. Azure Synapse Analytics removes this complexity by integrating the analytics landscape into one service.
+
+# Design a Modern Data Warehouse using Azure Synapse Analytics
+## Describe a modern data warehouse
+A modern data warehouse lets you bring together all your data at any scale easily, and means you can get insights through analytical dashboards, operational reports, or advanced analytics for all your users.
+
+The pace of change in both the capabilities of technologies, and the elastic nature of cloud services has meant that new opportunities have been presented to evolve the data warehouse to handle modern workloads including:
+
+### Increased volumes of data
+Microsoft Azure services have the capability to scale its capacity to meet the demands that an organization faces as its data grows. In traditional on-premises data, scaling on-premises servers is a non-trivial task that involves costs, procurement of additional hardware, as well as potential disruption to the business to meet the demand.
+
+You can auto-scale or scale in one click with Azure. It is pay-as-you go compared to on-premise which requires you to pay upfront cost.
+
+### New varieties of data
+Staging data is also simplified using Azure Data Lake Store Gen2, which can store a wide variety of data in its raw format, making the process of ingesting data into a data warehouse much easier.
+
+Traditional data warehouses in the past have had difficulty in handling certain types of data. For example, extrapolating data from sources such as PDF files through to sound files were either too complex or cost prohibitive. The improvements in AI technologies such as Form Recognizer and Speech to Text Cognitive Services means that these types of data sources can now be passed through a cognitive service and outputted in a text-based format that can be stored in the Azure Data Lake Store Gen2, along with the source files themselves.
+
+### Data velocities
+Traditional on-premises data warehouses in the main have dealt with the batch movement of data based on a schedule. Some organization may build real-time data warehouse if the business need is compelling and the organization can absorb the cost of the implementation.
+
+## Define a modern data warehouse architecture
+When thinking about usage patterns that customers are using today to maximize the value of their data, a modern data warehouse lets you bring together all your data at scale easily, so you get to the insights through analytics dashboards, operational reporting, or advanced analytics for your users.
+
+The process of building a modern data warehouse typically consists of:
+
+- Data Ingestion and Preparation.
+- Making the data ready for consumption by analytical tools.
+- Providing access to the data, in a shaped format so that it can easily be consumed by data visualization tools.
+
+Prior to the release of Azure Synapse Analytics, this would be achieved in the following way:
+
+### Data ingestion and preparation
+At the foundation, customers build a data lake to store all their data and different data types with Azure Data Lake Store Gen2. To ingest data, customers can do so code-free with over 100 data integration connectors with Azure Data Factory. Data Factory empowers customers to do code-free ETL/ELT, including preparation and transformation.
+
+Whether the data is an on-premises data sources, other Azure services, or other cloud services, customers can seamlessly author, monitor, and manage their big data pipelines with a visual environment that is easy to use.
+
+### Making the data ready for consumption by analytical tools
+Azure Synapse Analytics implements a data warehouse using a dedicated SQL pool that leverages the Massively Parallel Processing engine that brings together enterprise data warehousing and Big Data analytics.
+
+### Providing access to the data, in a shaped format so that it can easily be consumed by data visualization tools
+Power BI enables customers to build visualizations on massive amounts of data and ensures that data insights are available to everyone across their organization. Power BI supports an enormous set of data sources, which can be queried live, or be used to model and ingest for detailed analysis and visualization.
+
+### Defining a modern data warehousing architecture with Azure Synapse Analytics
+You can either use Azure Synapse exclusively, which works well for green field projects. But for organizations with existing investments in Azure with Azure Data Factory, Azure Databricks and Power BI, you can take a hybrid approach and combine them with Azure Synapse Analytics. It is also important to understand that you can also use a range of languages to ingest data, clean, transform and serve the data. These languages can include the SQL, Python and Scala language. All of which can be used within Azure Synapse Analytics.
+
+
+
+
+
+
