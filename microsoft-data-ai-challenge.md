@@ -127,6 +127,9 @@ Power BI enables customers to build visualizations on massive amounts of data an
 ### Defining a modern data warehousing architecture with Azure Synapse Analytics
 You can either use Azure Synapse exclusively, which works well for green field projects. But for organizations with existing investments in Azure with Azure Data Factory, Azure Databricks and Power BI, you can take a hybrid approach and combine them with Azure Synapse Analytics. It is also important to understand that you can also use a range of languages to ingest data, clean, transform and serve the data. These languages can include the SQL, Python and Scala language. All of which can be used within Azure Synapse Analytics.
 
+# Use automated machine learning in Azure Machine Learning
+## What is machine learning?
+
 
 
 
