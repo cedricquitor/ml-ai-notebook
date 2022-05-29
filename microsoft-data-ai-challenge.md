@@ -177,15 +177,42 @@ In [Azure Machine Learning studio](https://ml.azure.com/), expand the left pane 
 - **Location:** Select the same as your workspace. If that location is not listed, choose the one closest to you
 - **Virtual Machine tier:** Dedicated
 - **Virtual Machine type:** CPU
-- V**irtual Machine size:**
+- **Virtual Machine size:**
     - Choose **Select from all options**
     - Search for and select **Standard_DS11_v2**
 - Select **Next**
 - **Compute name:** enter a unique name
 - **Minimum number of nodes:** 0
-- M**aximum number of nodes:** 2
+- **Maximum number of nodes:** 2
 - **Idle seconds before scale down:** 120
 - **Enable SSH access:** Unselected
 - Select **Create**
 
+## Explore data
+Machine learning models must be trained with existing data. In this case, you'll use a dataset of historical bicycle rental details to train a model that predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features.
+
+### Create a dataset
+In Azure Machine Learning, data for model training and other operations is usually encapsulated in an object called a dataset.
+
+1. View the comma-separated data at https://aka.ms/bike-rentals in your web browser.
+2. In [Azure Machine Learning studio](https://ml.azure.com/), expand the left pane by selecting the three lines at the top left of the screen. View the Data page (under Assets). The Data page contains specific data files or tables that you plan to work with in Azure ML. You can create datasets from this page as well.
+3. Create a new dataset from web files, using the following settings:
+- **Basic Info:**
+    - **Web URL:** https://aka.ms/bike-rentals
+    - **Name:** bike-rentals
+    - **Dataset type:** Tabular
+    - **Description:** Bicycle rental data
+    - **Skip data validation:** do not select
+- **Settings and preview:**
+    - **File format:** Delimited
+    - **Delimiter:** Comma
+    - **Encoding:** UTF-8
+    - **Column headers:** Only first file has headers
+    - **Skip rows:** None
+    - **Dataset contains multi-line data:** do not select
+- **Schema:**
+    - Include all columns other than **Path**
+    - Review the automatically detected types
+- **Confirm details:**
+    - Do not profile the dataset after creation
 
