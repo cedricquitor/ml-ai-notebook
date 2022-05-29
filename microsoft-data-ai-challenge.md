@@ -129,9 +129,63 @@ You can either use Azure Synapse exclusively, which works well for green field p
 
 # Use automated machine learning in Azure Machine Learning
 ## What is machine learning?
+It is a technique where you can use data to train a model that predicts unknown information.
 
+For example, suppose Adventure Works Cycles is a business that rents cycles in a city. The business could use historic data to train a model that predicts daily rental demand in order to make sure sufficient staff and cycles are available.
 
+To do this, Adventure Works could create a machine learning model that takes information about a specific day (the day of week, the anticipated weather conditions, and so on) as an input, and predicts the expected number of rentals as an output.
 
+## Azure Machine Learning
+Azure Machine Learning is a cloud-based service that helps simplify some of the tasks and reduce the time it takes to prepare data, train a model, and deploy a predictive service. 
 
+## Create an Azure Machine Learning workspace
+Azure Machine Learning is a cloud-based platform for building and operating machine learning solutions in Azure. It includes a wide range of features and capabilities that help data scientists prepare data, train models, publish predictive services, and monitor their usage. Most importantly, it helps data scientists increase their efficiency by automating many of the time-consuming tasks associated with training models; and it enables them to use cloud-based compute resources that scale effectively to handle large volumes of data while incurring costs only when actually used.
+
+## Create an Azure Machine Learning workspace
+Follow these steps to create a workspace:
+1. Sign into the [Azure](https://portal.azure.com/#home) portal using your Microsoft credentials.
+2. Select ＋Create a resource, search for Machine Learning, and create a new Azure Machine Learning resource with an Azure Machine Learning plan. Use the following settings:
+
+    - **Subscription:** Your Azure subscription
+    - **Resource group:** Create or select a resource group
+    - **Workspace name:** Enter a unique name for your workspace
+    - **Region:** Select the geographical region closest to you
+    - **Storage account:** Note the default new storage account that will be created for your workspace
+    - **Key vault:** Note the default new key vault that will be created for your workspace
+    - **Application insights:** Note the default new application insights resource that will be created for your workspace
+    - **Container registry:** None (one will be created automatically the first time you deploy a model to a container)
+
+3. Select Review + create. Wait for your workspace to be created (it can take a few minutes). Then go to it in the portal.
+4. On the Overview page for your workspace, launch Azure Machine Learning studio (or open a new browser tab and navigate to https://ml.azure.com), and sign into Azure Machine Learning studio using your Microsoft account.
+5. In Azure Machine Learning studio, toggle the ☰ icon at the top left to view the various pages in the interface. You can use these pages to manage the resources in your workspace.
+
+You can manage your workspace using the Azure portal, but for data scientists and Machine Learning operations engineers, Azure Machine Learning studio provides a more focused user interface for managing workspace resources.
+
+## Create compute resources
+At its core, Azure Machine Learning is a platform for training and managing machine learning models, for which you need compute on which to run the training process.
+
+### Create a compute cluster
+Compute targets are cloud-based resources on which you can run model training and data exploration processes.
+
+In [Azure Machine Learning studio](https://ml.azure.com/), expand the left pane by selecting the three lines at the top left of the screen. View the Compute page (under Manage). This is where you manage the compute targets for your data science activities. There are four kinds of compute resource you can create:
+- **Compute Instances:** Development workstations that data scientists can use to work with data and models.
+- **Compute Clusters:** Scalable clusters of virtual machines for on-demand processing of experiment code.
+- **Inference Clusters:** Deployment targets for predictive services that use your trained models.
+- **Attached Compute:** Links to existing Azure compute resources, such as Virtual Machines or Azure Databricks clusters.
+
+1. Switch to the Compute Clusters tab, and add a new compute cluster with the following settings. You'll use this to train a machine learning model:
+- **Location:** Select the same as your workspace. If that location is not listed, choose the one closest to you
+- **Virtual Machine tier:** Dedicated
+- **Virtual Machine type:** CPU
+- V**irtual Machine size:**
+    - Choose **Select from all options**
+    - Search for and select **Standard_DS11_v2**
+- Select **Next**
+- **Compute name:** enter a unique name
+- **Minimum number of nodes:** 0
+- M**aximum number of nodes:** 2
+- **Idle seconds before scale down:** 120
+- **Enable SSH access:** Unselected
+- Select **Create**
 
 
