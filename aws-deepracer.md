@@ -97,9 +97,24 @@ The end-to-end training process is:
 Pragmatic problem solving with machine learning is rarely an exact science, and you might have assumptions about your data or problem that turn out to be false. Don’t get discouraged. Instead, foster a habit of trying new things, measuring success, and comparing results across iterations.
 
 ### 4. Evaluate the model
+Model accuracy is a fairly common evaluation metric. _Accuracy_ is the fraction of predictions a model gets right.
+
+Every step we have gone through is highly iterative and can be changed or rescoped during the course of a project. At each step, you might find that you need to go back and reevaluate some assumptions you had in previous steps. Don't worry! This ambiguity is normal.
+
 ### 5. Use the model
+You're ready to deploy your model. Once you have trained your model, have evaluated its effectiveness, and are satisfied with the results, you're ready to generate predictions on real-world problems using unseen data in the field. In machine learning, this process is often called **inference**.
+
+Even after you deploy your model, you're always monitoring to make sure your model is producing the kinds of results that you expect. There may be times where you reinvestigate the data, modify some of the parameters in your model training algorithm, or even change the model type used for training.
 
 These steps are iterative. In practice, that means that at each step along the process, you review how the process is going. Are things operating as you expected? If not, go back and revisit your current step or previous steps to try and identify the breakdown.
 The rest of the course is designed around these very important steps.
 
 ## Examples in Machine Learning
+Supervised learning
+- Using machine learning to predict housing prices in a neighborhood, based on lot size and the number of bedrooms.
+
+Unsupervised learning
+- Using machine learning to isolate micro-genres of books by analyzing the wording on the back cover description.
+
+Deep neural network
+- It can be used to analyze raw images from lab video footage from security cameras, trying to detect chemical spills.
